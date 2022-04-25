@@ -2,6 +2,7 @@ import random
 
 NOMBRE_MIN = 1
 NOMBRE_MAX = 10
+NB_QUESTIONS = 4
 
 
 def poser_question():
@@ -15,4 +16,7 @@ def poser_question():
         print("Réponse incorrecte")
 
 
-poser_question()
+for i in range(0, NB_QUESTIONS):
+    print(f"Question n°{i+1} sur 4:")
+    poser_question()
+    print()
